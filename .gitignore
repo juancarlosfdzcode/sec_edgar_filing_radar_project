@@ -1,0 +1,25 @@
+# Virtual environment (also holds the API key in its activate script)
+.filing-radar-venv/
+.venv/
+
+# Airflow runtime files: keep only the DAGs
+airflow/*
+!airflow/dags/
+
+# Generated data: filings, vector store and raw answers
+data/
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets and local settings
+.env
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+
+# Uncomment to keep generated reports out of the repo
+# reports/
