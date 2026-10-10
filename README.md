@@ -1,6 +1,10 @@
 
 # SEC EDGAR Filing Radar
 
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-3-017CEE?logo=apacheairflow&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-vector%20store-FF6F61)
+
 A daily Airflow pipeline that downloads new SEC 8-K filings for a watchlist of companies, indexes them in a vector database, and uses retrieval-augmented generation (RAG) to answer a fixed set of questions about them. The result is a Markdown report with sources.
 
 Built as a small, readable example of how Airflow, a vector store and an LLM fit together. The whole pipeline lives in one file.
